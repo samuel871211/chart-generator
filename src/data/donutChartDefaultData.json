@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "title": "~~~donut chart title~~~",
+  "subtitle": "~~~donut chart subtitle~~~",
+  "data": [
+    { "option": "非常滿意", "value": "34.1", "color": "#FFA800" },
+    { "option": "還算滿意", "value": "42.7", "color": "rgba(255,168,0,0.5)" },
+    {
+      "option": "不太滿意",
+      "value": "13.6",
+      "color": "rgba(50,197,188,0.5)"
+    },
+    { "option": "非常不滿意", "value": "4.4", "color": "#32C5BC" },
+    { "option": "不知道/未回答", "value": "5.2", "color": "#808080" }
+  ]
+}

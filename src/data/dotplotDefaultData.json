@@ -1,0 +1,18 @@
+{
+  "title": "connected dot plot title",
+  "label": {
+    "unit": "(元)",
+    "start": 2011,
+    "end": 2020,
+    "startColor": "#FFA800",
+    "endColor": "#32C5BC"
+  },
+  "data": [
+    { "city": "新北市", "start": "279239", "end": "396813" },
+    { "city": "台北市", "start": "381561", "end": "472710" },
+    { "city": "桃園市", "start": "273295", "end": "363913" },
+    { "city": "台中市", "start": "265316", "end": "362089" },
+    { "city": "台南市", "start": "245524", "end": "320617" },
+    { "city": "高雄市", "start": "270996", "end": "350964" }
+  ]
+}

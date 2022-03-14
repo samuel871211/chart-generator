@@ -1,0 +1,12 @@
+{
+  "title": "tree map title",
+  "data": [
+    { "name": "City", "parent": "", "value": "" },
+    { "name": "台南", "parent": "City", "value": 5.47 },
+    { "name": "高雄", "parent": "City", "value": 10.86 },
+    { "name": "台北", "parent": "City", "value": 3.1 },
+    { "name": "新北", "parent": "City", "value": 2.15 },
+    { "name": "桃園", "parent": "City", "value": 2.87 },
+    { "name": "台中", "parent": "City", "value": 9.5 }
+  ]
+}
