@@ -22,7 +22,7 @@
 <script>
 import { useIntersectionObserver } from "@vueuse/core";
 import { defineComponent, ref, onMounted } from "vue"
-import * as d3 from 'd3'
+import * as d3 from "../../../node_modules/d3"
 
 export default defineComponent({
   props: ["data"],

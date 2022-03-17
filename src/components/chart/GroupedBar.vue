@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { defineProps, ref, computed, onMounted } from "vue";
 import { useIntersectionObserver } from "@vueuse/core";
-import type { barChartSchema } from "../../data/barChart";
+import type { groupedBarChartSchema } from "../../data/groupedBarChart";
 // props
-const props = defineProps<{ data: barChartSchema }>();
+const props = defineProps<{ data: groupedBarChartSchema }>();
 // CONSTANT
 type Countrys = "台北" | "新北" | "桃園" | "台中" | "台南" | "高雄"
 const COUNTRYS: Countrys[] = ["台北", "新北", "桃園", "台中", "台南", "高雄"];

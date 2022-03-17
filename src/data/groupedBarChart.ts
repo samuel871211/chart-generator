@@ -1,11 +1,11 @@
 import type { pollSchema } from "./poll";
 
-export interface barChartSchema extends pollSchema {
+export interface groupedBarChartSchema extends pollSchema {
   yAxisLabel: string;
   yAxisScales: number[];
 }
 
-export const barChartDefaultData: barChartSchema = {
+export const groupedBarChartDefaultData: groupedBarChartSchema = {
   台中: [15, 17.04],
   新北: [9.69, 11.31],
   桃園: [14.1, 15.3],
