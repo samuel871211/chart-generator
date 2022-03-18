@@ -36,7 +36,7 @@ function assignTo (chartType: string): void {
   <el-container>
     <el-header>
       <div :class="$style.headerWrapper">
-        <h1>Udn Chart Genrator</h1>
+        <h1>My Projects</h1>
         <el-dropdown>
           <el-icon><user-filled/></el-icon>
           <span>yusheng.chen@udn.group.com</span>
@@ -52,47 +52,44 @@ function assignTo (chartType: string): void {
     </el-header>
     <el-main :class="$style.main">
       <el-row justify="center">
-        <el-col :xs="24" :sm="24" :md="24">
-          <h2>Choose a template</h2>
-        </el-col>
         <el-col :xs="24" :sm="12" :md="8">
-          <el-tooltip content="line chart">
-            <el-button size="large" @click="assignTo('line-chart')">line chart</el-button>
+          <el-tooltip content="編輯">
+            <el-button size="large" @click="assignTo('line-chart')">custom Line Chart - 20220301</el-button>
           </el-tooltip>
           <Line :data="lineChartDefaultData" current-page="台中" size="normal"/>
         </el-col>
 
         <el-col :xs="24" :sm="12" :md="8">
-          <el-tooltip content="grouped bar chart">
-            <el-button size="large" @click="assignTo('grouped-bar-chart')">grouped bar chart</el-button>
+          <el-tooltip content="編輯">
+            <el-button size="large" @click="assignTo('grouped-bar-chart')">custom grouped bar chart - 20220302</el-button>
           </el-tooltip>
           <GroupedBarChart :data="groupedBarChartDefaultData"/>
         </el-col>
         
         <el-col :xs="24" :sm="12" :md="8">
-          <el-tooltip content="stacked horizontal bar chart">
-            <el-button size="large" @click="assignTo('stacked-horizontal-bar-chart')">stacked horizontal bar chart</el-button>
+          <el-tooltip content="編輯">
+            <el-button size="large" @click="assignTo('stacked-horizontal-bar-chart')">隨意命名的test</el-button>
           </el-tooltip>
           <StackedHorizontalBar :data="stackedHorizontalDefaultData"/>
         </el-col>
         
         <el-col :xs="24" :sm="12" :md="8">
-          <el-tooltip content="donut chart">
-            <el-button size="large" @click="assignTo('donut-chart')">donut chart</el-button>
+          <el-tooltip content="編輯">
+            <el-button size="large" @click="assignTo('donut-chart')">2022年的甜甜圈</el-button>
           </el-tooltip>
           <donut :data="donutChartDefaultData"/>
         </el-col>
         
         <el-col :xs="24" :sm="12" :md="8">
-          <el-tooltip content="tree map">
-            <el-button size="large" @click="assignTo('tree-map')">tree map</el-button>
+          <el-tooltip content="編輯">
+            <el-button size="large" @click="assignTo('tree-map')">這是一個長方形</el-button>
           </el-tooltip>
           <treemap :data="treemapDefaultData"/>
         </el-col>
         
         <el-col :xs="24" :sm="12" :md="8">
-          <el-tooltip content="connected dot plot">
-            <el-button size="large" @click="assignTo('connected-dot-plot')">connected dot plot</el-button>
+          <el-tooltip content="編輯">
+            <el-button size="large" @click="assignTo('connected-dot-plot')">2011 - 2020 六縣市成長比例</el-button>
           </el-tooltip>
           <dotplot :data="dotplotDefaultData"/>
         </el-col>

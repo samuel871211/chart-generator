@@ -1,3 +1,5 @@
+type Countrys = '台北' | '新北' | '桃園' | '台中' | '台南' | '高雄'
+
 interface sixTargetSchema {
   title: string;
   subTitle: string;
@@ -20,7 +22,7 @@ interface sixTargetSchema {
 }
 
 interface StrengthAndWeaknessSchema extends sixTargetSchema {
-  targetPoints: { country: string; index: number }[];
+  targetPoints: { country: Countrys; index: number }[];
 }
 
 // 六大指標(sixTarget)
@@ -378,13 +380,17 @@ export const 高雄: 高雄schema = {
   strength: [],
   weakness: [],
 };
-export const lineChartDefaultData: sixTargetSchema = {
+export const lineChartDefaultData: StrengthAndWeaknessSchema = {
   title: "line chart title",
   subTitle: "line chart subtitle",
   xAxisLabel: "年",
   yAxisLabel: "%",
   xAxisScales: [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
   yAxisScales: [10, 20, 30, 40],
+  targetPoints: [
+    { country: "台北", index: 1 },
+    { country: "新北", index: 3 },
+  ],
   台北: [16.47, 14.31, 12.91, 13.88, 10.1, 18.07, 16.1, 24.86, 13.65, 12.67],
   新北: [21.53, 21.13, 10.46, 18.56, 16.8, 25.81, 13.92, 23.38, 12.6, 22.34],
   桃園: [15.59, 10.54, 18.39, 15.75, 15.19, 15.31, 13.51, 12.63, 12.24, 22.26],

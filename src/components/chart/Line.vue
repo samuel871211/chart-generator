@@ -267,7 +267,7 @@ onMounted(() => svgDrawer.initOnMounted(svgDrawer))
             :cx="`${svgDrawer.points.targets[index]?.x}%`"
             :cy="`${svgDrawer.points.targets[index]?.y}%`"
           />
-          <text
+          <!-- <text
             v-for="(point, index) in data.targetPoints || []"
             :key="index"
             :class="
@@ -290,7 +290,7 @@ onMounted(() => svgDrawer.initOnMounted(svgDrawer))
               {{ data.xAxisScales[point.index] }}年
               {{ data[point.country][point.index] }}
             </tspan>
-          </text>
+          </text> -->
         </g>
       </svg>
       <div
