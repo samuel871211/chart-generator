@@ -2,6 +2,21 @@
 import { Location } from '@element-plus/icons-vue'
 import GroupedBar from '../../components/chart/GroupedBar.vue'
 import { groupedBarChartDefaultData } from '../../data/groupedBarChart'
+import {
+    ElContainer,
+    ElHeader,
+    ElButton,
+    ElDivider,
+    ElMain,
+    ElRow,
+    ElCol,
+    ElMenu,
+    ElSubMenu,
+    ElMenuItemGroup,
+    ElMenuItem,
+    ElIcon,
+    ElInput
+} from 'element-plus'
 import { PUREHTML } from '../../data/PureHTML'
 import { ref } from 'vue'
 const showHTMLResult = ref(false)

@@ -2,6 +2,21 @@
 import { Location } from '@element-plus/icons-vue'
 import donut from '../../components/chart/donut.vue'
 import donutChartDefaultData from '../../data/donutChartDefaultData.json'
+import {
+    ElContainer,
+    ElHeader,
+    ElButton,
+    ElDivider,
+    ElMain,
+    ElRow,
+    ElCol,
+    ElMenu,
+    ElSubMenu,
+    ElMenuItemGroup,
+    ElMenuItem,
+    ElIcon,
+    ElInput
+} from 'element-plus'
 import { PUREHTML } from '../../data/PureHTML'
 import { ref } from 'vue'
 const showHTMLResult = ref(false)

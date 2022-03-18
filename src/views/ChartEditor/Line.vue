@@ -2,6 +2,21 @@
 import { Location } from '@element-plus/icons-vue'
 import Line from '../../components/chart/Line.vue'
 import { lineChartDefaultData } from '../../data/lineChart'
+import {
+    ElContainer,
+    ElHeader,
+    ElButton,
+    ElDivider,
+    ElMain,
+    ElRow,
+    ElCol,
+    ElMenu,
+    ElSubMenu,
+    ElMenuItemGroup,
+    ElMenuItem,
+    ElIcon,
+    ElInput
+} from 'element-plus'
 import { PUREHTML } from '../../data/PureHTML'
 import { ref } from 'vue'
 const showHTMLResult = ref(false)

@@ -13,6 +13,16 @@ import { stackedHorizontalDefaultData } from '../data/poll'
 import donutChartDefaultData from '../data/donutChartDefaultData.json'
 import treemapDefaultData from '../data/treemapDefaultData.json'
 import dotplotDefaultData from '../data/dotplotDefaultData.json'
+import {
+  ElContainer,
+  ElHeader,
+  ElMain,
+  ElDivider,
+  ElRow,
+  ElCol,
+  ElTooltip,
+  ElButton
+} from 'element-plus'
 import { useRouter } from 'vue-router'
 const router = useRouter()
 function assignTo (chartType: string): void {

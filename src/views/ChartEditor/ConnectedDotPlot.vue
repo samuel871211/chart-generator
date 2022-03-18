@@ -2,9 +2,22 @@
 import { Location } from '@element-plus/icons-vue'
 import dotplot from '../../components/chart/dotplot.vue'
 import dotplotDefaultData from '../../data/dotplotDefaultData.json'
-// import donut from '../../components/chart/donut.vue'
-// import donutChartDefaultData from '../../data/donutChartDefaultData.json'
 import { PUREHTML } from '../../data/PureHTML'
+import {
+    ElContainer,
+    ElHeader,
+    ElButton,
+    ElDivider,
+    ElMain,
+    ElRow,
+    ElCol,
+    ElMenu,
+    ElSubMenu,
+    ElMenuItemGroup,
+    ElMenuItem,
+    ElIcon,
+    ElInput
+} from 'element-plus'
 import { ref } from 'vue'
 const showHTMLResult = ref(false)
 const disabled = ref(true)
@@ -132,7 +145,6 @@ function test () {
                 </el-col>
                 <el-col :xs="12" :sm="18" :md="20">
                     <dotplot :data="dotplotDefaultData"/>
-                    <!-- <donut :data="donutChartDefaultData"/> -->
                 </el-col>
                 <el-col :xs="24" v-show="showHTMLResult">
                     <el-tooltip :disabled="disabled" content="Copied">
