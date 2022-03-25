@@ -23,7 +23,7 @@ import {
         border
     >
         <template #extra>
-        <el-button type="primary" @click="$router.push('/home')">Home</el-button>
+        <el-button type="primary" @click="$router.push('/template')">Home</el-button>
         </template>
         <el-descriptions-item>
         <template #label>

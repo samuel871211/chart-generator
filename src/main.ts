@@ -6,6 +6,7 @@ import App from './App.vue'
 import Login from './views/Login.vue'
 import Home from './views/Home.vue'
 import Line from './views/ChartEditor/Line.vue'
+import LinePublish from './views/LinePublish.vue'
 import StackedHorizontalBar from './views/ChartEditor/StackedHorizontalBar.vue'
 import GroupedBar from './views/ChartEditor/GroupedBar.vue'
 import Donut from './views/ChartEditor/Donut.vue'
@@ -17,15 +18,16 @@ import Projects from './views/Projects.vue'
 const router = createRouter({
     routes: [
         { path: '/', component: Login },
-        { path: '/home', component: Home },
-        { path: '/chart-editor/line-chart', component: Line },
-        { path: '/chart-editor/grouped-bar-chart', component: GroupedBar },
-        { path: '/chart-editor/stacked-horizontal-bar-chart', component: StackedHorizontalBar },
-        { path: '/chart-editor/donut-chart', component: Donut },
-        { path: '/chart-editor/tree-map', component: TreeMap },
-        { path: '/chart-editor/connected-dot-plot', component: ConnectedDotPlot },
+        { path: '/template', component: Home },
+        { path: '/editor/line-chart', component: Line },
+        { path: '/editor/grouped-bar-chart', component: GroupedBar },
+        { path: '/editor/stacked-horizontal-bar-chart', component: StackedHorizontalBar },
+        { path: '/editor/donut-chart', component: Donut },
+        { path: '/editor/tree-map', component: TreeMap },
+        { path: '/editor/connected-dot-plot', component: ConnectedDotPlot },
         { path: '/profile/:userId', component: Profile },
-        { path: '/projects/:userId', component: Projects }
+        { path: '/projects/:userId', component: Projects },
+        { path: '/publish/line-chart/:uuid', component: LinePublish }                                                        
     ],
     history: createWebHistory()
 })

@@ -28,7 +28,7 @@ import { useRouter } from 'vue-router'
 const userId = '4f4e70ce-db80-462d-a02d-025b56c659c9'
 const router = useRouter()
 function assignTo (chartType: string): void {
-  router.push(`/chart-editor/${chartType}`)
+  router.push(`/editor/${chartType}`)
 }
 </script>
 

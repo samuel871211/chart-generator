@@ -22,7 +22,7 @@ function forgotPassword (): void {
             <ElInput v-model="password" type="password" placeholder="password"></ElInput>
             <ElButtonGroup>
                 <ElButton @click="forgotPassword">忘記密碼</ElButton>
-                <ElButton @click="$router.push('/home')">登入</ElButton>
+                <ElButton @click="$router.push('/template')">登入</ElButton>
             </ElButtonGroup>
         </div>
     </div>
